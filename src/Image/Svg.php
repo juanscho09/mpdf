@@ -615,7 +615,7 @@ class Svg
 			if (stristr($y1, '%') !== false) {
 				$y1 = ($y1 + 0) / 100;
 			}
-			if (stristr($y2, '%') !== false) {
+			if ($y2 = stristr($y2, '%', true) !== false) {
 				$y2 = ($y2 + 0) / 100;
 			}
 
